@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>廖乃頡的個人網頁</title>
+    <title>廖乃頡的作品集</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,50 +12,55 @@
             padding: 20px;
             line-height: 1.8;
         }
-
         h1 {
             text-align: center;
             color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
         }
-
         .info {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .assignments {
             margin: 30px 0;
         }
-
-        .photo {
-            text-align: center;
-            margin: 30px 0;
+        .assignments li {
+            margin: 10px 0;
+            font-size: 1.1em;
         }
-
-        .photo img {
-            max-width: 400px;
-            width: 100%;
-            height: auto;
+        .assignments a {
+            color: #0066cc;
+            text-decoration: none;
         }
-
-        .future {
-            margin: 30px 0;
-            text-align: center;
+        .assignments a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-<h1>個人網頁</h1>
+<h1>Web 伺服器架設與網頁設計 - 作品集</h1>
 
 <div class="info">
     <p><strong>姓名：</strong>廖乃頡</p>
     <p><strong>學號：</strong>413510440</p>
-    <p><strong>系年級：</strong>輔仁大學 醫學系二年級</p>
-    <p><strong>日期時間：</strong>中華民國 114 年 10 月 08 日 22 時 30 分</p>
+    <p><strong>系級：</strong>輔仁大學 醫學系二年級</p>
 </div>
 
-<div class="photo">
-    <p><strong>照片：</strong></p>
-    <img src="photo.jpg" alt="廖乃頡的照片">
+<div class="assignments">
+    <h2>課程作業</h2>
+    <ul>
+        <li><a href="hw2/">作業二：個人首頁</a></li>
+        <li><a href="hw3/">作業三：網頁設計進階</a></li>
+        <li><a href="hw4/">作業四：互動網頁</a></li>
+        <!-- 之後的作業繼續新增 -->
+    </ul>
 </div>
 
-<div class="future">
-    <p>本網站將使用HTML5/CSS3建構，敬請期待⋯.</p>
-</div>
+<footer style="text-align: center; margin-top: 50px; color: #666;">
+    <p>© 2025 輔仁大學 醫學系</p>
+</footer>
 </body>
 </html>
