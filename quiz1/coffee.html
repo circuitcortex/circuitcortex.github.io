@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="zh-TW" http-equiv="Content-Language">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<title>屬性選擇器 coffee </title>
+<style type="text/css">
+    [class~=coffee] {color:blue}
+    /* ppt p.84 原程式碼為: [class|="coffee"] {color:red}
+    將選擇器規則由|=修改成^=使其只要以coffe為開頭即可 */
+    [class^="coffee"] {color:red}
+</style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="American coffee">美式咖啡</li>
+        <li class="coffee-vanilla">香草拿鐵</li>
+        <li class="coffeecaramel">焦糖拿鐵</li>
+        <li class="Irish coffee">愛爾蘭咖啡</li>
+    </ul>
+</body>
+
+</html>
