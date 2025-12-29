@@ -1,82 +1,75 @@
 @charset "utf-8";
 
-/* =========================================
-   1. 全域設定 (Global Styles)
-   ========================================= */
+/* 全域設定 */
 
-/* 設定全站字型，優先使用微軟正黑體 */
+/* 全站字型微軟正黑體 */
 body {
     font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-    margin: 0; /* 清除瀏覽器預設邊距 */
+    margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* 備用背景色 */
-    background-image: url('images/bg.jpg'); /* [規定] 全站背景一致 (請準備一張淺色背景圖) */
-    background-attachment: fixed; /* 背景固定，產生視差效果 */
-    background-size: cover; /* 背景填滿 */
-    color: #333; /* 主要文字顏色 */
-    line-height: 1.6; /* 設定行高，增加閱讀舒適度 */
+    background-color: #f9f9f9;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* 連結標籤的預設樣式 */
+/* 連結標籤預設樣式 */
 a {
-    text-decoration: none; /* 去除底線 */
-    color: inherit; /* 顏色繼承父元素 */
-    transition: 0.3s; /* 設定轉場動畫時間 */
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
 }
 
-/* =========================================
-   2. 版面配置 (Layout & Centering)
-   ========================================= */
+/* 版面配置 */
 
-/* [規定] 網頁內容必須置中排版 (Wrapper) */
+/* 置中排版*/
 .wrapper {
-    width: 90%; /* 寬度佔視窗 90% */
-    max-width: 1200px; /* 最大寬度限制 */
-    margin: 0 auto; /* 上下0，左右自動 (置中關鍵) */
-    background-color: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
-    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* 陰影效果 */
-    min-height: 100vh; /* 最小高度為視窗高度 */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* 讓 Footer 自動推到最下方 */
+    flex-direction: column;
 }
 
-/* Header 區域設定 */
+/* Header */
 header {
-    background-color: #007ACC; /* 台北捷運藍 */
+    background-color: #007ACC;
     color: white;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 5px solid #FFD700; /* 金黃色裝飾線 */
+    border-bottom: 5px solid #FFD700;
 }
 
 /* 網站主標題樣式 */
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 文字陰影 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-/* =========================================
-   3. 導覽列 (Navigation)
-   ========================================= */
+/* 導覽列 (Navigation) */
 
 /* 導覽列容器 */
 nav {
-    background-color: #333; /* 深灰色背景 */
+    background-color: #333;
     text-align: center;
-    position: sticky; /* [特效] 黏性定位，捲動時會固定在頂部 */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* 確保在最上層 */
+    z-index: 1000;
 }
 
 /* 導覽列清單 */
 nav ul {
-    list-style: none; /* 去除清單符號 */
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* 導覽列項目 (橫向排列) */
+/* 導覽列項目 */
 nav ul li {
     display: inline-block;
 }
@@ -87,65 +80,63 @@ nav ul li a {
     padding: 15px 20px;
     color: white;
     font-weight: bold;
-    border-bottom: 3px solid transparent; /* 預留底部線條空間 */
+    border-bottom: 3px solid transparent;
 }
 
-/* [類程式化 CSS] 滑鼠移過導覽列的效果 */
+/* 導覽列效果 */
 nav ul li a:hover {
-    color: #FFD700; /* 變為金黃色 */
-    border-bottom: 3px solid #FFD700; /* 顯示底部線條 */
+    color: #FFD700;
+    border-bottom: 3px solid #FFD700;
     background-color: #444;
 }
 
-/* =========================================
-   4. 主要內容區 (Main Content)
-   ========================================= */
+/* 主要內容區 */
 
 /* 內容區塊設定 */
 main {
     padding: 40px;
-    flex: 1; /* 佔滿剩餘空間 */
+    flex: 1;
 }
 
 /* 單元標題樣式 */
 h2 {
     color: #007ACC;
-    border-left: 8px solid #007ACC; /* 左側粗線條 */
+    border-left: 8px solid #007ACC;
     padding-left: 15px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-/* [規定] 圖層區塊 Flexbox 排版 (用於卡片) */
+/* Flexbox 排版 */
 .flex-container {
     display: flex;
-    justify-content: space-between; /* 平均分散 */
-    flex-wrap: wrap; /* 允許換行 */
-    gap: 20px; /* 卡片間距 */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* 卡片樣式 */
 .card {
-    flex: 1; /* 自動伸縮 */
-    min-width: 300px; /* 最小寬度 */
+    flex: 1;
+    min-width: 300px;
     background: white;
     border: 1px solid #eee;
-    border-radius: 8px; /* 圓角 */
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s; /* 動畫轉場 */
+    transition: transform 0.3s;
 }
 
-/* [類程式化 CSS] 滑鼠移過卡片上浮效果 */
+/* 卡片效果 */
 .card:hover {
-    transform: translateY(-5px); /* 向上浮動 5px */
+    transform: translateY(-5px);
 }
 
 /* 卡片圖片 */
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* 保持比例裁切 */
+    object-fit: cover;
 }
 
 /* 卡片內文 */
@@ -153,14 +144,12 @@ h2 {
     padding: 20px;
 }
 
-/* =========================================
-   5. 表格樣式 (Table) - [規定] 必須使用
-   ========================================= */
+/* 表格樣式 */
 
 /* 表格整體 */
 .styled-table {
     width: 100%;
-    border-collapse: collapse; /* 合併邊框 */
+    border-collapse: collapse;
     margin: 25px 0;
     background-color: white;
 }
@@ -179,19 +168,17 @@ h2 {
     padding: 12px;
 }
 
-/* [類程式化 CSS] 隔行變色 (偶數行) */
+/* 隔行變色 */
 .styled-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* [類程式化 CSS] 滑鼠經過變色 */
+/* 滑鼠經過變色 */
 .styled-table tr:hover {
     background-color: #e6f7ff;
 }
 
-/* =========================================
-   6. 頁尾 (Footer)
-   ========================================= */
+/* 頁尾 */
 footer {
     background-color: #333;
     color: #ccc;
