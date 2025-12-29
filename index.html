@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>廖乃頡的作品集</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.8;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .info {
-            background: #f5f5f5;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .assignments {
-            margin: 30px 0;
-        }
-        .assignments li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-        .assignments a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .assignments a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>首頁 | 漫遊台北 Explore Taipei</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Web 伺服器架設與網頁設計 - 作品集</h1>
 
-<div class="info">
-    <p><strong>姓名：</strong>廖乃頡</p>
-    <p><strong>學號：</strong>413510440</p>
-    <p><strong>系級：</strong>輔仁大學 醫學系二年級</p>
+<div class="wrapper">
+
+    <header>
+        <h1>🚇 漫遊台北 Explore Taipei</h1>
+        <p>在地視角 ‧ 深度探索 ‧ 城市漫遊</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="history.html">歷史古蹟</a></li>
+            <li><a href="creative.html">文創園區</a></li>
+            <li><a href="nature.html">自然風光</a></li>
+            <li><a href="food.html">夜市美食</a></li>
+            <li><a href="transport.html">交通攻略</a></li>
+        </ul>
+    </nav>
+
+    <div style="width:100%; height:450px; overflow:hidden; position:relative;">
+        <img src="images/banner.jpg" alt="台北101城市景觀" style="width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,0.6); color:white; padding:10px 20px; border-radius:5px;">
+            <h2>探索台北的每一個角落</h2>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2>歡迎來到台北</h2>
+            <p>台北，一座融合了傳統歷史與現代創意的城市。除了知名的 101 大樓，這裡還有百年的龍山寺、充滿活力的文創園區、以及令人垂涎的夜市美食。本網站旨在為交換生與外地朋友，提供一份最在地的旅遊指南。</p>
+        </section>
+
+        <section>
+            <h2>精選推薦</h2>
+            <div class="flex-container">
+                <article class="card">
+                    <img src="images/nature.jpg" alt="自然風光">
+                    <div class="card-text">
+                        <h3>⛰️ 自然風光</h3>
+                        <p>陽明山花季、象山夜景，只需搭乘捷運，就能輕鬆擁抱大自然。</p>
+                        <a href="nature.html" style="color:#007ACC; font-weight:bold;">了解更多 →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/food.jpg" alt="夜市美食">
+                    <div class="card-text">
+                        <h3>🍜 夜市美食</h3>
+                        <p>從士林的大雞排到饒河街的胡椒餅，帶你吃遍台北銅板美食。</p>
+                        <a href="food.html" style="color:#007ACC; font-weight:bold;">了解更多 →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/transport.jpg" alt="交通攻略">
+                    <div class="card-text">
+                        <h3>🚇 交通攻略</h3>
+                        <p>台北捷運與 YouBike 轉乘教學，讓你像在地人一樣穿梭自如。</p>
+                        <a href="transport.html" style="color:#007ACC; font-weight:bold;">了解更多 →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 漫遊台北 Explore Taipei | Design by 413510440 廖乃頡</p>
+    </footer>
+
 </div>
 
-<div class="assignments">
-    <h2>課程作業</h2>
-    <ul>
-        <li><a href="hw1/">作業一：第一個網頁</a></li>
-        <li><a href="hw2/">作業二：個人首頁</a></li>
-        <li><a href="quiz1/coffee.html">小考一：CSS選擇器</a></li>
-    </ul>
-</div>
-
-<footer style="text-align: center; margin-top: 50px; color: #666;">
-    <p>© 2025 輔仁大學 醫學系</p>
-</footer>
 </body>
 </html>
