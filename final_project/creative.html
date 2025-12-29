@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文創園區 | 漫遊台北 Explore Taipei</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* [頁面專屬樣式] 示範在個別頁面加入 CSS */
+        .spot-block {
+            display: flex;
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            align-items: center; /* 垂直置中 */
+        }
+        .spot-img {
+            flex: 1;
+            max-width: 400px;
+            margin-right: 30px;
+        }
+        .spot-img img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .spot-info {
+            flex: 2;
+        }
+        /* RWD: 手機版變成上下排列 */
+        @media (max-width: 768px) {
+            .spot-block {
+                flex-direction: column;
+            }
+            .spot-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <h1>🎨 文創園區探索</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="history.html">歷史古蹟</a></li>
+            <li><a href="creative.html">文創園區</a></li>
+            <li><a href="nature.html">自然風光</a></li>
+            <li><a href="food.html">夜市美食</a></li>
+            <li><a href="transport.html">交通攻略</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>老空間 ‧ 新生命</h2>
+        <p>台北市將許多閒置的舊工廠與倉庫，活化改建為充滿設計感的文創園區。</p>
+
+        <div class="spot-block">
+            <div class="spot-img">
+                <img src="images/songshan.jpg" alt="松山文創園區">
+            </div>
+            <div class="spot-info">
+                <h3>松山文創園區 (松菸)</h3>
+                <p><strong>前身：</strong>台灣總督府專賣局松山菸草工場</p>
+                <p>位於繁華的信義區旁，這裡保留了日治時期的製菸工廠建築與巴洛克花園。現在進駐了誠品書店、設計選物店與各式展覽。園區內的生態池畔非常適合午後放鬆。</p>
+                <p>📍 交通：捷運國父紀念館站 5 號出口</p>
+            </div>
+        </div>
+
+        <div class="spot-block">
+            <div class="spot-img">
+                <img src="images/huashan.jpg" alt="華山1914文創園區">
+            </div>
+            <div class="spot-info">
+                <h3>華山 1914 文化創意產業園區</h3>
+                <p><strong>前身：</strong>台北酒廠</p>
+                <p>台北最熱門的展演空間之一，工業風的建築與綠意爬藤牆面是這裡的標誌。週末常有文創市集、街頭藝人表演以及電影節活動。光點華山電影館也是文青必訪之地。</p>
+                <p>📍 交通：捷運忠孝新生站 1 號出口</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 漫遊台北 Explore Taipei | Design by 413510440 廖乃頡</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
