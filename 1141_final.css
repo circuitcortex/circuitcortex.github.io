@@ -23,6 +23,6 @@
 /* 定義按鈕上文字位置與層級保持最上*/
 .button_text {
   position: relative; /*使用相對座標並在底下 z-index 定義放在最上層*/
-  z-index: 100;
+  z-index: 9999;
   font-size: 1.25rem;
 }
